@@ -1,0 +1,48 @@
+{
+  "name": "shooter",
+  "version": "1.0.0",
+  "description": "Online multiplayer game demo",
+  "main": "client/index.js",
+  "author": "Benjamin Fishbaum",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/app.js",
+    "wbuild": "webpack --config ./webpack.config.js",
+    "wdev": "webpack serve --https --config ./webpack.config.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "eslint": "^5.16.0",
+    "promise-retry": "^1.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
+    "express": "^4.17.1",
+    "express-router": "0.0.1",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
